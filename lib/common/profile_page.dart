@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'admin_employee_masters.dart';
+import '../Admin/admin_employee_masters.dart';
 import '../widgets/dashboard_drawer.dart';
 
 class ProfilePage extends StatefulWidget {

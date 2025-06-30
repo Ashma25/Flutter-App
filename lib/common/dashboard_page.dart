@@ -3,15 +3,16 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../widgets/dashboard_calendar.dart';
 import '../widgets/dashboard_drawer.dart';
-import 'leave_page.dart';
-import 'admin_employee_masters.dart';
+import '../Admin/leave_page.dart';
+import '../Admin/admin_employee_masters.dart';
 import 'view_profile_page.dart';
 import 'animated_login_screen.dart';
 import 'attendance_page.dart';
-import 'employee_leave_calendar_page.dart';
-import 'leave_calendar_page.dart';
-import 'employee_leave_requests_page.dart' as emp_leave_req;
+import '../Employee/employee_leave_calendar_page.dart';
+import '../Admin/leave_calendar_page.dart';
+import '../Employee/employee_leave_requests_page.dart' as emp_leave_req;
 import 'policy_page.dart';
+import '../widgets/weather_widget.dart';
 
 class DashboardPage extends StatefulWidget {
   final String email;
@@ -404,6 +405,11 @@ class _DashboardPageState extends State<DashboardPage>
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // Add the weather widget at the top
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: WeatherWidget(),
+            ),
             // Add the calendar at the top
             Padding(
               padding: const EdgeInsets.all(16.0),

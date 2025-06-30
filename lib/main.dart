@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'screens/animated_login_screen.dart';
-import 'screens/dashboard_page.dart';
-import 'screens/code_master_page.dart';
-import 'screens/profile_page.dart';
-import 'screens/admin_employee_masters.dart';
-import 'screens/employee_profile_page.dart';
-import 'screens/app_theme.dart';
+import 'common/animated_login_screen.dart';
+import 'common/dashboard_page.dart';
+import 'Admin/code_master_page.dart';
+import 'common/profile_page.dart';
+import 'Admin/admin_employee_masters.dart';
+import 'Employee/employee_profile_page.dart';
+import 'common/app_theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:intl/intl.dart';
-import 'edit_profile_page.dart';
+import '../Admin/edit_profile_page.dart';
 import 'dart:ui';
 import 'animated_login_screen.dart';
 import '../widgets/dashboard_drawer.dart';

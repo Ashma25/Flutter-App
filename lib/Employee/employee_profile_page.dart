@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'edit_profile_page.dart';
+import '../Admin/edit_profile_page.dart';
 
 class EmployeeProfilePage extends StatefulWidget {
   final String loggedInUserEmail;
